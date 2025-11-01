@@ -21,4 +21,6 @@ public class WelcomeController {
         return (CsrfToken) request.getAttribute("_csrf");
     }
 
+
+
 }

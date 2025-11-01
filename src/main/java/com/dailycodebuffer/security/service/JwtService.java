@@ -42,7 +42,7 @@ public class JwtService {
                 .setSubject(user.getUserName())
                 .setIssuer("DCB")
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 60 * 10 * 1000))
+                .setExpiration(new Date(System.currentTimeMillis() + 60 * 1 * 1000))
                 .signWith(generateKey())
                 .compact();
     }
